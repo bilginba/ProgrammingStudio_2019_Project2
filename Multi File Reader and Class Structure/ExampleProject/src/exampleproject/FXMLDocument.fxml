@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="632.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="exampleproject.FXMLDocumentController">
+    <children>
+        <Button fx:id="chooseFileButton" layoutX="14.0" layoutY="14.0" onAction="#openFileAction" text="Choose File" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="chooseDirectoryButton" layoutX="112.0" layoutY="14.0" onAction="#openDirectoryAction" text="Choose Directory" />
+      <ListView fx:id="courseList" layoutX="525.0" layoutY="25.0" prefHeight="208.0" prefWidth="83.0" />
+      <ChoiceBox fx:id="sectionChoiceBox" layoutX="525.0" layoutY="253.0" prefHeight="17.0" prefWidth="83.0" />
+      <Button fx:id="giveInfo" layoutX="525.0" layoutY="299.0" mnemonicParsing="false" onAction="#displayData" prefHeight="25.0" prefWidth="83.0" text="Display Info" />
+      <TextArea fx:id="infoTextArea" layoutX="14.0" layoutY="53.0" prefHeight="337.0" prefWidth="481.0" />
+    </children>
+</AnchorPane>
